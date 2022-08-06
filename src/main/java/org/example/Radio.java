@@ -2,7 +2,7 @@ package org.example;
 
 public class Radio {
 
-    private int maxStation;
+    private int maxStation = 10;
     private int minStation = 0;
     private int currentStation;
     private int maxVolume = 100;
@@ -10,8 +10,13 @@ public class Radio {
 
     public Radio(int amountOfStations) {
         maxStation = (minStation + amountOfStations) - 1;
-        this.maxStation = maxStation;
         this.minStation = minStation;
+    }
+
+    public Radio(int maxStation, int minStation) {
+        this.maxStation = maxStation;
+        this.minStation = maxStation;
+
     }
 
 

@@ -169,7 +169,7 @@ public class RadioTest {
 
     public void shouldNotSetVolumeBellow0() {
 
-        Radio radio = new Radio(30);
+        Radio radio = new Radio(10,0);
 
         radio.setCurrentVolume(-6);
 
